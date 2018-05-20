@@ -1,0 +1,27 @@
+title: AmFuture
+email: info@fake.com
+description: Our vision is to see spiritual and talented young minds with a bright future.
+baseurl: ''
+url: url
+meta_author: Tom Hamilton Stubber
+
+# Build settings
+markdown: kramdown
+theme: minima
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+include:
+  - _redirects
+address:
+  - 2nd Floor
+  - Tirupati Mazima Mall
+  - Kabalagala Road
+phone: +256 706 559412
+social:
+  - title: facebook
+    url: https://www.facebook.com/AmFuture-476703619089133/
+
+socket_key: '6b04f212e12fd648efdc'

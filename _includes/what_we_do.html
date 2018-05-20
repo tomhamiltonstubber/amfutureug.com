@@ -1,0 +1,22 @@
+<section class="primary-dark" id="what-we-do">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Learn more</h2>
+        <hr>
+        <div class="activity-types">
+          {% for activity_type in page.activity_types %}
+            <div class="col-xs-6 col-md-3">
+              <div class="activity-type">
+                <a href="{{ activity_type.link }}">
+                  <img src="/static/img/{{ activity_type.image }}"/>
+                  <h3>{{ activity_type.name }}</h3>
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
