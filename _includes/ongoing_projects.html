@@ -5,18 +5,27 @@
         <h2 class="text-center">Ongoing Projects</h2>
         <hr>
         <div class="ongoing-projects">
-          {% for project in page.ongoing_projects %}
-            <div class="row ongoing-project {% cycle '', 'right' %}">
-              <div class="col-md-9 col-sm-9 {% cycle '', 'col-md-push-3 col-sm-push-3' %}">
-                <h3>{{ project.title }}</h3>
-                <p class="text-muted">{{ project.date | date: '%B %d, %Y' }}</p>
-                {{ project.description | markdownify }}
-              </div>
-              <div class="img-wrapper col-md-3 col-sm-3  {% cycle '', 'col-md-pull-9' %}">
-                <img src="/static/img/{{ project.image }}"/>
-              </div>
+          <div class="row ongoing-project">
+            <div class="col-md-9 col-sm-12">
+              <h3>{{ page.project_1.title }}</h3>
+              <p class="text-muted">{{ page.project_1.date | date: '%B %d, %Y' }}</p>
+              {{ page.project_1.description | markdownify }}
             </div>
-          {% endfor %}
+            <div class="img-wrapper col-md-3 %}">
+              <img src="/static/img/{{ page.project_1.image }}"/>
+            </div>
+          </div>
+
+          <div class="row ongoing-project right">
+            <div class="col-md-9 col-md-push-3 %}">
+              <h3>{{ page.project_2.title }}</h3>
+              <p class="text-muted">{{ page.project_2.date | date: '%B %d, %Y' }}</p>
+              {{ page.project_2.description | markdownify }}
+            </div>
+            <div class="img-wrapper col-md-3 col-md-pull-9 %}">
+              <img src="/static/img/{{ page.project_2.image }}"/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
