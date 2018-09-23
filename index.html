@@ -38,8 +38,116 @@ project_2:
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   date: 2018-05-15 00:00:00
 ---
-{% include header.html %}
-{% include about.html %}
-{% include what_we_do.html %}
-{% include ongoing_projects.html %}
-{% include get_involved.html %}
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-text">
+          <h1 class="name">{{ site.title }}</h1>
+          <hr>
+          <h2>"{{ site.description }}"</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="primary-light" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Who we are</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          AmFuture is a multifaceted, dynamic organisation working with youth in Uganda. We are
+          multifaceted in that we are a youth group, a creative arts program and a social enterprise business.
+        </p>
+        <p>
+          AmFuture started as a group of young people meeting in the house of Ian and Sally Muwonge. These
+          are our roots, and we will always remain passionate about walking alongside young people. Even
+          though we are growing exponentially and taking on new projects, we will always have the youth
+          group on Saturday afternoon. On Saturday afternoon there is music and worship and a chance for
+          the young people to showcase their talents in a supportive gathering.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="/static/img/about_us.jpeg"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="primary-dark" id="what-we-do">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="activity-types">
+          <p>Learn more about the different ways AmFuture is helping the local community.</p>
+          {% for activity_type in page.activity_types %}
+            <div class="col-xs-12 col-md-3">
+              <div class="activity-type">
+                <a href="{{ activity_type.link }}">
+                  <img src="/static/img/{{ activity_type.image }}"/>
+                  <h3>{{ activity_type.name }}</h3>
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="primary-light" id="ongoing-projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center">Ongoing Projects</h2>
+        <hr>
+        <div class="ongoing-projects">
+          <div class="row ongoing-project">
+            <div class="col-md-9 col-sm-12">
+              <h3>{{ page.project_1.title }}</h3>
+              <p class="text-muted">{{ page.project_1.date | date: '%B %d, %Y' }}</p>
+              {{ page.project_1.description | markdownify }}
+            </div>
+            <div class="img-wrapper col-md-3 %}">
+              <img src="/static/img/{{ page.project_1.image }}"/>
+            </div>
+          </div>
+
+          <div class="row ongoing-project right">
+            <div class="col-md-9 col-md-push-3 %}">
+              <h3>{{ page.project_2.title }}</h3>
+              <p class="text-muted">{{ page.project_2.date | date: '%B %d, %Y' }}</p>
+              {{ page.project_2.description | markdownify }}
+            </div>
+            <div class="img-wrapper col-md-3 col-md-pull-9 %}">
+              <img src="/static/img/{{ page.project_2.image }}"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="primary-dark" id="get-involved">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Get Involved!</h2>
+        <p>
+          We love hearing from anyone who's interested in what we do, so if you want to get
+          involved in AmFuture, or simply want to find out more information, get in touch!
+        </p>
+        <div id="get-involved-enquiry"></div>
+      </div>
+    </div>
+  </div>
+</section>
