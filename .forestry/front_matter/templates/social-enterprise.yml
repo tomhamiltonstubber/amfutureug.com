@@ -13,3 +13,12 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: textarea
+  label: Content
+  name: content
+  description: Content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: true
