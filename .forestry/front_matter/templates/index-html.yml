@@ -1,7 +1,7 @@
 ---
 label: index.html
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -81,3 +81,12 @@ fields:
     default: ''
   hidden: false
   default: ''
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: true
+  label: Who We Are
+  name: who_we_are
+  description: The text displayed underneath the 'Who We Are' section
