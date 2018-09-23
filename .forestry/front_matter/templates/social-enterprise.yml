@@ -23,5 +23,6 @@ fields:
       format: markdown
     required: true
 pages:
+- leadership_and_training.html
 - creative_arts.html
 - social_enterprise.html
