@@ -82,7 +82,8 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
         <div class="activity-types">
           <p>Learn more about the different ways AmFuture is helping the local community.</p>
           {% for activity_type in page.activity_types %}
-            <div class="col-xs-12 col-md-3">
+            <div class="col-sm-6 col-xs-3 col-md-3">
+            <!--<div class="activity-type-wrapper">-->
               <div class="activity-type">
                 <a href="{{ activity_type.link }}">
                   <img src="/static/img/{{ activity_type.image }}"/>
@@ -136,7 +137,7 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Get Involved!</h2>
-        {{ page.
+        <p>{{ page.get_involved }}</p>
         <div id="get-involved-enquiry"></div>
       </div>
     </div>

@@ -15,7 +15,7 @@ fields:
   default: ''
 - type: textarea
   label: Content
-  name: content
+  name: p_content
   description: Content
   config:
     wysiwyg: true
