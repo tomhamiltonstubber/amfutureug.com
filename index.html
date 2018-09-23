@@ -66,7 +66,7 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
     </div>
     <div class="row">
       <div class="col-md-8">
-        {{ page.who_we_are }}
+        {{ page.who_we_are | markdownify }}
       </div>
       <div class="col-md-4">
         <img src="/static/img/about_us.jpeg"/>
@@ -136,10 +136,7 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Get Involved!</h2>
-        <p>
-          We love hearing from anyone who's interested in what we do, so if you want to get
-          involved in AmFuture, or simply want to find out more information, get in touch!
-        </p>
+        {{ page.
         <div id="get-involved-enquiry"></div>
       </div>
     </div>
