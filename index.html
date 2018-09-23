@@ -1,23 +1,18 @@
 ---
 layout: base
 activity_types:
--
-  name: Youth Group
+- name: Youth Group
   image: rehearsal_studio_thumb.jpeg
-  link: /youth-group/
--
-  name: Social Enterprise
+  link: "/youth-group/"
+- name: Social Enterprise
   image: rehearsal_studio_thumb.jpeg
-  link: /social-enterprise/
--
-  name: Creative Arts
+  link: "/social-enterprise/"
+- name: Creative Arts
   image: rehearsal_studio_thumb.jpeg
-  link: /creative-arts/
--
-  name: Leadership & Training
+  link: "/creative-arts/"
+- name: Leadership & Training
   image: rehearsal_studio_thumb.jpeg
-  link: /leadership-and-training/
-
+  link: "/leadership-and-training/"
 project_1:
   title: The piggery gets a new pig!
   image: wilbur.jpg
@@ -26,8 +21,7 @@ project_1:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  date: 2018-05-07 00:00:00
-
+  date: 2018-05-07 00:00:00 +0000
 project_2:
   title: Rehearsal studio is open for business
   image: rehearsal_ongoing.jpg
@@ -36,7 +30,17 @@ project_2:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  date: 2018-05-15 00:00:00
+  date: 2018-05-15 00:00:00 +0000
+who_we_are: |-
+  AmFuture is a youth-led, dynamic African NGO working in Kampala, Uganda.  We are a grassroots charity organisation and social enterprise. AmFuture is run by Ugandans, for Ugandans and all the money that goes to AmFuture goes directly to Ugandans. AmFuture is supported by a volunteer international board and a supporter base in Australia and the Netherlands.
+
+  AmFuture and the programs it runs have grown organically around the visions and dreams of the young people involved. We have a rehearsal studio/equipment hire business, a band, an art class, a profitable piggery, and a large and popular youth group, sewn together by a leadership development program. All of AmFuture’s programs work towards helping us achieve our vision:
+
+  _“Spiritual and talented young minds with a bright future.”_
+get_involved: We love hearing from anyone who's interested in what we do, so if you
+  want to get involved in AmFuture, or simply want to find out more information, get
+  in touch!
+
 ---
 <header>
   <div class="container">
@@ -62,17 +66,7 @@ project_2:
     </div>
     <div class="row">
       <div class="col-md-8">
-        <p>
-          AmFuture is a multifaceted, dynamic organisation working with youth in Uganda. We are
-          multifaceted in that we are a youth group, a creative arts program and a social enterprise business.
-        </p>
-        <p>
-          AmFuture started as a group of young people meeting in the house of Ian and Sally Muwonge. These
-          are our roots, and we will always remain passionate about walking alongside young people. Even
-          though we are growing exponentially and taking on new projects, we will always have the youth
-          group on Saturday afternoon. On Saturday afternoon there is music and worship and a chance for
-          the young people to showcase their talents in a supportive gathering.
-        </p>
+        {{ page.who_we_are }}
       </div>
       <div class="col-md-4">
         <img src="/static/img/about_us.jpeg"/>

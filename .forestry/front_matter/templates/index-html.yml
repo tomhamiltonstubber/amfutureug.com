@@ -91,3 +91,5 @@ fields:
   name: get_involved
   config:
     required: true
+pages:
+- index.html
