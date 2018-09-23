@@ -3,11 +3,6 @@ label: index.html
 hide_body: false
 is_partial: false
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: ''
 - name: activity_types
   label: Activity types
   type: field_group_list
