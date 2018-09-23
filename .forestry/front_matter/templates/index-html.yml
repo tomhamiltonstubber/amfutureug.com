@@ -85,13 +85,9 @@ fields:
   label: Who We Are
   name: who_we_are
   description: The text displayed underneath the 'Who We Are' section
-  default: "AmFuture is a youth-led, dynamic African NGO working in Kampala, Uganda.
-     We are a grassroots charity organisation and social enterprise. AmFuture is run
-    by Ugandans, for Ugandans and all the money that goes to AmFuture goes directly
-    to Ugandans. AmFuture is supported by a volunteer international board and a supporter
-    base in Australia and the Netherlands. \n\nAmFuture and the programs it runs have
-    grown organically around the visions and dreams of the young people involved.
-    We have a rehearsal studio/equipment hire business, a band, an art class, a profitable
-    piggery, and a large and popular youth group, sewn together by a leadership development
-    program. All of AmFuture’s programs work towards helping us achieve our vision:\n\n_“Spiritual
-    and talented young minds with a bright future.”_"
+  default: ''
+- type: textarea
+  label: Get Involved
+  name: get_involved
+  config:
+    required: true
