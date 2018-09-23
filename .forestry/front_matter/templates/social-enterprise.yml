@@ -23,4 +23,5 @@ fields:
       format: markdown
     required: true
 pages:
+- creative_arts.html
 - social_enterprise.html
