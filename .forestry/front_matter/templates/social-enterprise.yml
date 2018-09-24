@@ -23,7 +23,7 @@ fields:
       format: markdown
     required: true
 pages:
-- youth_group.html
 - leadership_and_training.html
+- youth_group.html
 - creative_arts.html
 - social_enterprise.html
