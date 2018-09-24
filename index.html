@@ -5,17 +5,17 @@ activity_types:
   image: "/static/img/WhatsApp Image 2018-07-19 at 12.44.43 PM (1).jpeg"
   link: "/youth-group/"
 - name: Social Enterprise
-  image: rehearsal_studio_thumb.jpeg
+  image: /static/img/rehearsal_studio_thumb.jpeg
   link: "/social-enterprise/"
 - name: Creative Arts
-  image: rehearsal_studio_thumb.jpeg
+  image: /static/img/rehearsal_studio_thumb.jpeg
   link: "/creative-arts/"
 - name: Leadership & Training
-  image: rehearsal_studio_thumb.jpeg
+  image: /static/img/rehearsal_studio_thumb.jpeg
   link: "/leadership-and-training/"
 project_1:
   title: The piggery gets a new pig!
-  image: wilbur.jpg
+  image: /static/img/wilbur.jpg
   description: |
     Today we're really excited to introduce Wilbur!
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -24,7 +24,7 @@ project_1:
   date: 2018-05-07 00:00:00 +0000
 project_2:
   title: Rehearsal studio is open for business
-  image: rehearsal_ongoing.jpg
+  image: /static/img/rehearsal_ongoing.jpg
   description: |
     Today we're really excited to introduce Wilbur!
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -86,7 +86,7 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
             <!--<div class="activity-type-wrapper">-->
               <div class="activity-type">
                 <a href="{{ activity_type.link }}">
-                  <img src="/static/img/{{ activity_type.image }}"/>
+                  <img src="{{ activity_type.image }}"/>
                   <h3>{{ activity_type.name }}</h3>
                 </a>
               </div>
@@ -112,7 +112,7 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
               {{ page.project_1.description | markdownify }}
             </div>
             <div class="img-wrapper col-md-3 %}">
-              <img src="/static/img/{{ page.project_1.image }}"/>
+              <img src="{{ page.project_1.image }}"/>
             </div>
           </div>
 
@@ -123,7 +123,7 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
               {{ page.project_2.description | markdownify }}
             </div>
             <div class="img-wrapper col-md-3 col-md-pull-9 %}">
-              <img src="/static/img/{{ page.project_2.image }}"/>
+              <img src="{{ page.project_2.image }}"/>
             </div>
           </div>
         </div>
