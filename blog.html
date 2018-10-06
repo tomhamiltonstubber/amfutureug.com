@@ -1,0 +1,37 @@
+---
+title: Blog
+layout: default
+description: Learn about all we're doing here at AmFuture
+---
+<div class="container main post-list">
+  <div class="post-container col-md-push-1 col-md-10">
+    <h1 class="text-center">{{ page.title }}</h1>
+    <p class="text-center" style="padding-bottom: 20px">{{ page.description }}</p>
+    {% for post in site.posts %}
+      <div class="post-preview">
+        <a class="post-link" href="{{ post.url }}">
+          {% if post.thumbnail %}
+            <img src="{{ post.thumbnail }}" class="pull-right hidden-xs" />
+          {% endif %}
+          <h2>
+            {{ post.title }}
+          </h2>
+
+          <div class="post-meta">
+            <div class="meta-extra">
+              <span class="fa fa-calendar">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%b %-d, %Y" }}
+                </time>
+              </span>
+              <span class="fa fa-user">{{ post.author }}</span>
+            </div>
+          </div>
+
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 250 }}
+        </a>
+      </div>
+      <hr/>
+    {% endfor %}
+  </div>
+</div>

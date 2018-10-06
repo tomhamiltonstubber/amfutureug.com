@@ -33,6 +33,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
+              <a href="/blog/">Blog</a>
+            </li>
+            <li>
               <a href="{% if page.url != '/'%}/{% endif %}#about">Who we are</a>
             </li>
             <li>
@@ -108,7 +111,10 @@
         socket('{{ site.socket_key }}', {
           mode: 'enquiry-modal',
           element: '#get-involved-enquiry',
-          router_mode: 'history'
+          router_mode: 'history',
+          messages: {
+            enquiry_button: 'Get involved'
+          }
         })
       </script>
     {% endif %}
