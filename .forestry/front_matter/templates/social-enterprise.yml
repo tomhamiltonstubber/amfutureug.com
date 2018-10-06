@@ -23,7 +23,7 @@ fields:
       format: markdown
     required: true
 pages:
-- _posts/post-1.md
+- _posts/2018-10-06-post-1.md
 - leadership_and_training.html
 - youth_group.html
 - creative_arts.html
