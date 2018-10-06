@@ -99,13 +99,13 @@ header {
     linear-gradient(
       rgba(21, 43, 117, 0.3),
       rgba(21, 43, 117, 0.3)
-    ),url('/static/img/header_test.JPG') top/ 100% auto no-repeat;
+    ),url('/static/img/cover.jpg') center/ 100% auto no-repeat;
   @media (max-width: 767px) {
     background:
       linear-gradient(
         rgba(21, 43, 117, 0.3),
         rgba(21, 43, 117, 0.3)
-      ),url('/static/img/header_test.JPG') bottom/ 115% auto no-repeat;
+      ),url('/static/img/cover.jpg') bottom/ 115% auto no-repeat;
   }
   .container {
     padding-top: 100px;
@@ -335,6 +335,11 @@ section#what-we-do {
       @media (max-width: 767px) {
         margin: 20px
       }
+      img {
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+      }
     }
   }
 }
@@ -347,7 +352,7 @@ section#ongoing-projects {
         padding: 10px;
         img {
           width: 250px;
-          height: 250px;
+          height: 200px;
           object-fit: cover;
         }
       }
@@ -408,5 +413,95 @@ section#get-involved {
         text-decoration: none !important;
       }
     }
+  }
+}
+
+.container.main.post {
+  max-width: 900px;
+  padding-top: 0;
+}
+
+.post, .post-list {
+  margin-bottom: 0;
+  min-height: 600px;
+  @media (max-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .post-meta {
+    .meta-extra {
+      padding-top: 10px;
+    }
+    h2 {
+      color: black;
+      font-weight: 500;
+      font-size: 44px;
+      margin-bottom: 15px;
+    }
+    color: #888;
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+  }
+  .fa {
+    margin-right: 5px;
+  }
+  .fa:before {
+    margin-right: 3px;
+  }
+  .post-preview {
+    font-size: 17px;
+    .post-link {
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+      min-height: 150px;
+      h2 {
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      h2 {
+        font-size: 20px;
+      }
+    }
+    img {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      max-height: 250px;
+      vertical-align: baseline;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  hr {
+    margin-bottom: 40px;
+  }
+  .post-container {
+    display: inline-block;
+  }
+  .post-body {
+    line-height: 1.5;
+    font-size: 22px;
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+    em {
+      font-size: 20px;
+      padding-left: 5px;
+    }
+  }
+}
+
+a {
+  &:hover, &:focus {
+    text-decoration: none;
   }
 }

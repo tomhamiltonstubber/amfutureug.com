@@ -12,7 +12,7 @@ fields:
   label: Thumbnail
   name: thumbnail
 - type: textarea
-  name: content
+  name: page_content
   label: Content
   config:
     required: true

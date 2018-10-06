@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: default
+layout: base
 description: Learn about all we're doing here at AmFuture
 ---
 <div class="container main post-list">
@@ -27,8 +27,7 @@ description: Learn about all we're doing here at AmFuture
               <span class="fa fa-user">{{ post.author }}</span>
             </div>
           </div>
-
-          {{ post.excerpt | strip_html | strip_newlines | truncate: 250 }}
+          <p>{{ post.page_content | strip_html | strip_newlines | truncate: 250 }}</p>
         </a>
       </div>
       <hr/>

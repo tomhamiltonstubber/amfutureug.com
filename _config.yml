@@ -25,3 +25,16 @@ social:
     url: https://www.facebook.com/AmFuture-476703619089133/
 
 socket_key: '6b04f212e12fd648efdc'
+
+collections:
+  posts:
+    title: Blog
+    output: true
+    permalink: /blog/:title
+
+defaults:
+- scope:
+    path: '_posts'
+    type: posts
+  values:
+    layout: post
