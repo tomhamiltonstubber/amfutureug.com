@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/Article">
+  <div class="container main post">
+    <div class="post-meta">
+      <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}"/>
+      <meta itemprop="dateModified" content="{{ page.date | date_to_xmlschema }}"/>
+      <meta itemprop="name" content="{{ page.title }}"/>
+      <link itemprop="mainEntityOfPage" href="{{ page.permalink }}">
+      <div class="meta-extra">
+        <span class="fa fa-calendar">
+          <time>
+            {{ page.date | date: "%b %-d, %Y" }}
+          </time>
+        </span>
+        <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <a itemprop="url" href="/static/img/logo.png"></a>
+          </div>
+          <span itemprop="name" style="display: none">AmFuture</span>
+        </span>
+      </div>
+    </div>
+    <div class="post-body" itemprop="articleBody">
+      {{ page.content }}
+    </div>
+  </div>
+</article>
