@@ -19,3 +19,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- _posts/post-2.md
