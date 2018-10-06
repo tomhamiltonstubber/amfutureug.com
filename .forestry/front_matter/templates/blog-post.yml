@@ -1,0 +1,21 @@
+---
+label: Blog post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
+- type: file
+  label: Thumbnail
+  name: thumbnail
+- type: textarea
+  name: content
+  label: Content
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
