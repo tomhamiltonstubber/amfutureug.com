@@ -153,7 +153,7 @@ header {
     &:focus {
       outline: 0;
     }
-    &:hover {
+    &:hover, &.active {
       color: lighten($primary-first-colour, 20%);
     }
   }
@@ -205,14 +205,6 @@ header {
         padding-top: 0;
       }
     }
-  }
-}
-
-.navbar-default .navbar-nav > .active > a {
-  color: lighten($primary-first-colour, 20%);
-  background-color: $primary-first-colour;
-  &:hover {
-    background-color: $primary-first-colour;
   }
 }
 
