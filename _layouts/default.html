@@ -1,14 +1,16 @@
 ---
 layout: base
 ---
-<div class="container main primary-light">
+<div class="container main post primary-light">
   <h1 class="text-center">{{ page.title }}</h1>
   <hr>
-  {% if page.p_content %}
-    {{ page.p_content | markdownify }}
-  {% else %}
-    {{ content }}
-  {% endif %}
+  <div class="post-body">
+    {% if page.p_content %}
+      {{ page.p_content | markdownify }}
+    {% else %}
+      {{ content }}
+    {% endif %}
+  </div>
   <br>
   <div class="text-center" id="get-involved-enquiry">
     Get Involved
