@@ -100,32 +100,32 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    {% if site.socket_key %}
-      <script src="{{ page.socket_url }}"></script>
-      <script>
-        socket('{{ site.socket_key }}', {
-          mode: 'enquiry-modal',
-          element: '#nav-enquiry',
-          router_mode: 'history'
-        })
-        socket('{{ site.socket_key }}', {
-          mode: 'enquiry-modal',
-          element: '#get-involved-enquiry',
-          router_mode: 'history',
-          messages: {
-            enquiry_button: 'Get involved'
-          }
-        })
-      </script>
-    {% endif %}
     <script>
       {% if page.url =='/' %}
-        $('.navbar-default').affix({
-          offset: {
-            top: 200
-          }
-        })
+      $('.navbar-default').affix({
+        offset: {
+          top: 200
+        }
+      })
       {% endif %}
+      socket('{{ site.socket_key }}', {
+        mode: 'enquiry-modal',
+        element: '#nav-enquiry',
+        router_mode: 'history'
+      })
+      socket('{{ site.socket_key }}', {
+        mode: 'enquiry-modal',
+        element: '#get-involved-enquiry',
+        router_mode: 'history',
+        messages: {
+          enquiry_button: 'Get involved'
+        }
+      })
+      document.querySelectorAll('.post-body img').forEach(function (el) {
+        const $el = $(el).parent()
+        console.log($el.html())
+        $el.html('<div class="text-center">' + $el.html() + '</div>')
+      })
     </script>
   </body>
 </html>
