@@ -3,13 +3,14 @@
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Lato|Merriweather:400,700);
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans|Crimson+Text|Cardo|Domine|Noto+Serif+KR|Vollkorn');
 
 $primary-first-colour: #2DAAE0;
 $primary-second-colour: #c0e5f5;
 $primary-second-colour: #fbefea;
 
-$font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
 body {
   overflow-x: hidden;
@@ -19,6 +20,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Domine,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h2, h3 {
