@@ -1,3 +1,6 @@
 # single page app behaviour for the socket plugin
 /enquiry /                                 200
 /*/enquiry  /:splat                        200
+
+# Redirect to Forestry
+/login*      https://app.forestry.io/sites/rurex54io6z2dw/#/
