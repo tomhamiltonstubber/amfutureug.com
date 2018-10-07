@@ -104,13 +104,15 @@ header {
     linear-gradient(
       rgba(21, 43, 117, 0.3),
       rgba(21, 43, 117, 0.3)
-    ),url('/static/img/cover.jpg') center/ 100% auto no-repeat;
+    ),url('/static/img/cover_test.jpg') center/ 100% auto no-repeat;
+    //),url('/static/img/cover.jpg') center/ 100% auto no-repeat;
   @media (max-width: 767px) {
     background:
       linear-gradient(
         rgba(21, 43, 117, 0.3),
         rgba(21, 43, 117, 0.3)
-      ),url('/static/img/cover.jpg') bottom/ 115% auto no-repeat;
+      ),url('/static/img/cover_test.jpg') bottom/ 115% auto no-repeat;
+      //),url('/static/img/cover.jpg') bottom/ 115% auto no-repeat;
   }
   .container {
     padding-top: 100px;
