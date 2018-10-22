@@ -23,8 +23,8 @@ fields:
       format: markdown
     required: true
 pages:
+- our_story.html
 - youth_group.html
 - creative_arts.html
 - social_enterprise.html
-- our_story.html
 - leadership_and_training.html
