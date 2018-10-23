@@ -71,26 +71,20 @@ hr {
   }
 }
 
-.primary-light {
-  .btn {
-    border: solid 2px $primary-first-colour;
-    &:hover, &:focus, &:active, &.active {
-      border: solid 2px $primary-first-colour;
-      color: white;
-      background: $primary-first-colour;
-    }
-  }
+ .primary-dark {
+  background-color: $primary-second-colour;
 }
 
-.primary-dark {
-  background-color: $primary-second-colour;
-  .btn {
-    border: solid 2px white;
-    &:hover, &:focus, &:active, &.active {
-      border: solid 2px white;
-      color: $primary-first-colour;
-      background: white;
-    }
+.btn {
+  border: solid 2px $primary-first-colour;
+  background: $primary-first-colour;
+  color: white;
+  transition: all .3s ease;
+  &:hover {
+    border-color: darken($primary-first-colour, 20%);
+    color: $primary-first-colour;
+    background: darken($primary-first-colour, 20%);
+    text-decoration: none !important;
   }
 }
 
@@ -100,24 +94,15 @@ header {
   h2 {
     color: white;
   }
+  .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
   background:
     linear-gradient(
       rgba(21, 43, 117, 0.3),
       rgba(21, 43, 117, 0.3)
     ),url('/static/img/cover_test.jpg') center/ 100% auto no-repeat;
-    //),url('/static/img/cover.jpg') center/ 100% auto no-repeat;
-  @media (max-width: 767px) {
-    background:
-      linear-gradient(
-        rgba(21, 43, 117, 0.3),
-        rgba(21, 43, 117, 0.3)
-      ),url('/static/img/cover_test.jpg') bottom/ 115% auto no-repeat;
-      //),url('/static/img/cover.jpg') bottom/ 115% auto no-repeat;
-  }
-  .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-  }
   .intro-text {
     h1 {
       font-size: 2.5em;
@@ -135,6 +120,27 @@ header {
     .intro-text {
       h1 {
         font-size: 4.75em;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    background:
+      linear-gradient(
+        rgba(21, 43, 117, 0.3),
+        rgba(21, 43, 117, 0.3)
+      ),url('/static/img/cover_test.jpg') bottom/ 115% auto no-repeat;
+
+    .container {
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+    .intro-text {
+      h1 {
+        font-size: 2em;
+        font-weight: 700;
+      }
+      h2 {
+        font-size: 18px;
       }
     }
   }
@@ -220,7 +226,7 @@ section {
     margin: 0;
     font-size: 3em;
     @media (max-width: 767px) {
-      font-size: 2.5em;
+      font-size: 1.5em;
     }
   }
   &.success {
@@ -359,6 +365,10 @@ section#ongoing-projects {
         color: #888;
       }
       h3 {
+        transition: all .3s ease;
+        &:hover {
+          color: $primary-first-colour;
+        }
         font-size: 28px;
       }
       @media (max-width: 767px) {
@@ -396,6 +406,7 @@ section#get-involved {
       background: $primary-first-colour;
       border: solid 2px $primary-first-colour;
       &:hover {
+        border-color: darken($primary-first-colour, 20%);
         background: darken($primary-first-colour, 20%);
         text-decoration: none !important;
       }
@@ -411,6 +422,12 @@ section#get-involved {
         text-decoration: none !important;
       }
     }
+  }
+}
+
+.hidden-btn {
+  .tcs-button {
+    display: none;
   }
 }
 

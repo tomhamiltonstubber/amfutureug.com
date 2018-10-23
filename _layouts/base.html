@@ -40,7 +40,11 @@
               <a class="{% if page.url == '/about-us/'%}active{% endif %}" href="/about-us/">About Us</a>
             </li>
             <li>
-              <div id="nav-enquiry"></div>
+              <a id="nav-enquiry" href="#">Get in touch</a>
+            </li>
+            <li>
+              <div id="nav-enquiry-el" class="hidden-btn"></div>
+              <a href="https://anglicanaid.org.au/projects/amfuture" target="_blank">Donate now</a>
             </li>
           </ul>
         </div>
@@ -61,7 +65,8 @@
                   {{ line }} <br>
                 {% endfor %}
               </p>
-              <a href="tel:{{ site.phone }}"><span class="fa fa-phone"></span>&nbsp;&nbsp;{{ site.phone }}</a>
+              <a href="tel:{{ site.phone1 }}"><span class="fa fa-phone"></span>&nbsp;&nbsp;{{ site.phone1 }}</a><br>
+              <a href="tel:{{ site.phone2 }}"><span class="fa fa-phone"></span>&nbsp;&nbsp;{{ site.phone2 }}</a>
             </div>
             <div class="footer-col col-md-4 hidden-xs">
               <h3 class="text-center">Find us on Facebook</h3>
@@ -109,22 +114,31 @@
         }
       })
       {% endif %}
+
       socket('{{ site.socket_key }}', {
         mode: 'enquiry-modal',
-        element: '#nav-enquiry',
-        router_mode: 'history'
-      })
-      socket('{{ site.socket_key }}', {
-        mode: 'enquiry-modal',
-        element: '#get-involved-enquiry',
+        element: '#nav-enquiry-el',
         router_mode: 'history',
-        messages: {
-          enquiry_button: 'Get involved'
-        }
+      }).then(function (vm) {
+        $('#nav-enquiry').click((e) => {
+          e.preventDefault()
+          vm.goto('enquiry-modal')
+        })
       })
+
+      socket('{{ site.socket_key }}', {
+        mode: 'enquiry-modal',
+        element: '#call-to-action-enquiry',
+        router_mode: 'history',
+      }).then(function (vm) {
+        $('#get-involved-enquiry').click((e) => {
+          e.preventDefault()
+          vm.goto('enquiry-modal')
+        })
+      })
+
       document.querySelectorAll('.post-body img').forEach(function (el) {
         const $el = $(el).parent()
-        console.log($el.html())
         $el.html('<div class="text-center">' + $el.html() + '</div>')
       })
     </script>

@@ -16,10 +16,12 @@ exclude:
 include:
   - _redirects
 address:
-  - 2nd Floor
   - Tirupati Mazima Mall
-  - Kabalagala Road
-phone: +256 706 559412
+  - Level 2 Unit 251
+  - Ggaba Rd, Nsambya
+  - Kampala, Uganda
+phone1: +256 706 559412
+phone2: +256 783 011030
 social:
   - title: facebook
     url: https://www.facebook.com/AmFuture-476703619089133/
