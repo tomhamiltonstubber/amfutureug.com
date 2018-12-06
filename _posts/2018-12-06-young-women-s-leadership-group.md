@@ -1,7 +1,7 @@
 ---
 title: Young Women's Leadership Group
 layout: post
-date: 2018-12-06 16:15:36 +0000
+date: 2018-12-01 16:15:36 +0000
 thumbnail: "/static/img/TCNM8713.jpg"
 page_content: "![](/static/img/TCNM8713.jpg)\n\nSome of the young women from AmFuture
   meet the last Sunday of every month with our Co-Founder Sally Muwonge. They take

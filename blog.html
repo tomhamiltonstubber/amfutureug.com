@@ -27,7 +27,7 @@ description: Learn about all we're doing here at AmFuture
               <span class="fa fa-user">{{ post.author }}</span>
             </div>
           </div>
-          <p>{{ post.page_content | strip_html | strip_newlines | truncate: 250 }}</p>
+          <p>{{ post.page_content | markdownify | strip_html | strip_newlines | truncate: 250 }}</p>
         </a>
       </div>
       <hr/>
