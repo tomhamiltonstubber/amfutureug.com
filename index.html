@@ -109,7 +109,7 @@ get_involved: We love hearing from anyone who's interested in what we do, so if 
               <div class="col-md-9 {% cycle 'col-sm-12', 'col-md-push-3' %}">
                 <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
                 <p class="text-muted">{{ post.date | date: '%B %d, %Y' }}</p>
-                <p>{{ post.page_content | strip_html | strip_newlines | truncate: 250 }}</p>
+                <p>{{ post.page_content | markdownify | strip_html | strip_newlines | truncate: 250 }}</p>
               </div>
               <div class="img-wrapper col-md-3 {% cycle '', 'col-md-pull-9' %}">
                 <a href="{{ post.url }}"><img src="{{ post.thumbnail }}"/></a>
