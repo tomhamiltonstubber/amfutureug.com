@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Our Support Coordinator Innocent tells us his story '
-thumbnail: "/static/img/IMG-20190406-WA0004_2.jpg"
+thumbnail: "/static/img/IMG-20190406-WA0004_3.jpg"
 page_content: "We chat to our Innocent about his experience as Support Coordinator
   for the AmFuture Studio.\n\n![](/static/img/IMG-20190406-WA0005.jpg) \n\n### From
   your point of view, what has been the most significant (or important) change over
