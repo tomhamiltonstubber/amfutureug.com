@@ -1,7 +1,6 @@
 ---
 label: default
 hide_body: false
-is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -23,8 +22,8 @@ fields:
       format: markdown
     required: true
 pages:
-- leadership_and_training.html
-- social_enterprise.html
-- creative_arts.html
-- youth_group.html
 - our_story.html
+- youth_group.html
+- creative_arts.html
+- social_enterprise.html
+- leadership_and_training.html

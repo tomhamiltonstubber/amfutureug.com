@@ -1,7 +1,6 @@
 ---
 label: index.html
 hide_body: false
-is_partial: false
 fields:
 - name: activity_types
   label: Activity types
