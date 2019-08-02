@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Frank Israel from AmFuture launches video clip
-thumbnail: "/static/img/Frank Israel 3.png"
+thumbnail: "/static/img/Untitled.png"
 page_content: "Frank Israel who is part of the music team at AmFuture has released
   a video clip. The song is gorgeous, the video is gorgeous. We are pleased to be
   able to post this link on the blog and know you will enjoy watching it as much as
