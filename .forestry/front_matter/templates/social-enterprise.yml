@@ -22,8 +22,8 @@ fields:
       format: markdown
     required: true
 pages:
-- social_enterprise.html
 - creative_arts.html
-- youth_group.html
-- our_story.html
 - leadership_and_training.html
+- our_story.html
+- social_enterprise.html
+- youth_group.html
